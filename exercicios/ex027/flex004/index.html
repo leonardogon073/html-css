@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        div.conteiner{
+            background-color: lightsalmon;
+            height: 300px;
+            /*conteiner = pai sempre colocar dispay flex no pai
+                
+            configuração para eixo main
+                Justify-content: flex-start
+                 Justify-content: flex-end;
+                 Justify-content: center;
+                 Justify-content: space-between;
+                 Justify-content: space-evenly;
+                 Justify-content: space-around
+            
+            configuração para eixo cross
+                align-itens: strech;
+                align-itens: flex-start;
+                align-itens: flex-end;
+                align-itens: center;
+
+            
+            */
+            display: flex;
+            flex-flow: row nowrap;
+            Justify-content: space-around;
+            align-items: stretch;
+            
+        }
+
+        div.item{
+            /*item = filho sempre colocar flex auto no filho*/
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
